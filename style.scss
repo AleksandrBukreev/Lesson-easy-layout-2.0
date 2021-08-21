@@ -112,6 +112,21 @@ body {
     align-items: center;
   }
   
+  .test-transform:hover {
+    transform: scale(0.5);
+    transition: 0.5s;
+  }
+
+  .test-transform-2:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+  }
+
+  .test-transform-3:hover {
+    transform: rotate(360deg);
+    transition: 0.9s;
+  }
+
   .heading-items {
     text-align: center;
     font-family: 'Lato', sans-serif;

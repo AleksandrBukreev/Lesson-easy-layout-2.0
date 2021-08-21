@@ -154,6 +154,27 @@ body {
           align-items: center;
 }
 
+.test-transform:hover {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.test-transform-2:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.test-transform-3:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
 .heading-items {
   text-align: center;
   font-family: 'Lato', sans-serif;
