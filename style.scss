@@ -651,6 +651,95 @@ body {
     box-shadow: 0 0 10px #ffffff;
   }
  
+// registration
+.container-t {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
-  
+.registration {
+  display: flex;
+  margin: 64px auto 96px;
+}
+
+.registr-input {
+  flex-grow: 1;
+}
+
+.registr-input .registr-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name {
+    margin: 0 0 20px 0;
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+    padding: 0 17px 0 17px;
+}
+
+.input-last {
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+    padding: 0 17px 0 17px;
+}
+
+.check-gender {
+  margin: 31px 0 31px 0;
+}
+
+.check-label {
+    margin: 0 20px 0 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.input_mail {
+    margin: 0 0 20px 0;
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+    padding: 0 17px 0 17px;
+}
+
+.input_pass {
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+    padding: 0 17px 0 17px;
+}
+
+.registr-submit {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 16px 29px 16px 29px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #F16D7F;
+    border: none;
+    text-transform: uppercase;
+}
+
+.registr-submit:hover {
+  color: #F16D7F;
+  background: #FFFFFF;
+  border: 1px solid #F16D7F;
+}
+.registr-info {
+    max-width: 652px;
+    margin: 0 0 0 22px;
+}
+
 
