@@ -55,18 +55,79 @@
 
                     </ul>
                 </nav>
-                <a class="header-user" href="#"><img src="img/user.svg" alt="user"></a>
-                <a class="basket" href="#"><img src="img/basket.svg" alt="basket"></a>
+                <a class="header-user" href="registration.html"><img src="img/user.svg" alt="user"></a>
+                <a class="basket" href="cart.html"><img src="img/basket.svg" alt="basket"></a>
             </div>
         </div>
     </header>
     <div class="container">
         <div class="newarrivals">
             <div class="newarrivals-header">SHOPPING CART</div>
-
         </div>
     </div>
-
+    <main>
+        <div class="container-t shopping">
+            <section class="shop-cart">
+                <form action="#">
+                    <div class="cart-cards">
+                        <article class="cart-card">
+                            <a href="product.html"><img src="img/cart-card-1.jpg" alt="cart-card-1"></a>
+                            <div class="cart-card-text">
+                                <!-- <div>X</div> -->
+                                <h3>MANGO PEOPLE T-SHIRT</h3>
+                                <span>
+                                    Price:
+                                    <span class="intro-text-decor">$300</span>
+                                </span>
+                                <span>Color: Red</span>
+                                <span>Size: XL</span>
+                                <span class="quantity">
+                                    quantity:
+                                    <input class="quantity-input" type="number" placeholder="1">
+                                </span>
+                            </div>
+                        </article>
+                        <article class="cart-card">
+                            <a href="product.html"><img src="img/cart-card-1.jpg" alt="cart-card-1"></a>
+                            <div class="cart-card-text">
+                                <div>X</div>
+                                <h3>MANGO PEOPLE T-SHIRT</h3>
+                                <span>
+                                    Price:
+                                    <span class="intro-text-decor">$300</span>
+                                </span>
+                                <span>Color: Red</span>
+                                <span>Size: XL</span>
+                                <span class="quantity">
+                                    quantity:
+                                    <input class="quantity-input" type="number" placeholder="1">
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="shop-cart-button">
+                        <button type="reset">clear shopping cart</button>
+                        <a href="catalog.html">continue shopping</a>
+                    </div>
+                </form>
+            </section>
+            <section class="shop-forms">
+                <form class="shop-form" action="#">
+                    <h4>SHIPPING ADRESS</h4>
+                    <input type="text" placeholder="Bangladesh" required>
+                    <input type="text" placeholder="State" required>
+                    <input type="number" placeholder="Postcode/ZIP" required>
+                    <button type="submit">get a quote</button>
+                </form>
+                <form class="check-form" action="#">
+                    <h6>sub total <span>$900</span></h6>
+                    <h4>grand total <span>$900</span></h4>
+                    <hr>
+                    <button type="submit">proceed to checkout</button>
+                </form>
+            </section>
+        </div>
+    </main>
 
 
     <footer class="footer">
