@@ -341,7 +341,7 @@ main {
 }
 
 .offers-men {
-  background: url(img/offers_women.png);
+  background: url(img/bg-offers.png), url(img/offers_women.png);
   background-size: cover;
 }
 
