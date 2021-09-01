@@ -202,10 +202,6 @@ main {
   text-transform: uppercase;
 }
 
-section {
-  display: block;
-}
-
 .intro {
   background-color: #F1E4E6;
 }
@@ -220,7 +216,7 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background: url(img/man_top.png) no-repeat bottom;
+  background: url(img/man-top.png) no-repeat bottom;
   background-size: 33%;
   background-position-x: 10px;
 }
@@ -239,6 +235,14 @@ section {
           animation: pulse-regular 2s ease 0s infinite normal backwards;
   border-left: 12px solid #F16D7F;
   padding: 0 0 0 16px;
+}
+
+.intro-text h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32.5px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .intro-text-top {
@@ -278,16 +282,6 @@ section {
           align-items: center;
 }
 
-.offers-block:not(:last-child) {
-  width: 31.58%;
-  margin: 0 0 2.63% 0;
-}
-
-.offers-women {
-  background: url(img/offers-women.png);
-  background-size: cover;
-}
-
 .offers-block > a {
   font-size: 16px;
   line-height: 19px;
@@ -309,11 +303,7 @@ section {
   text-transform: uppercase;
 }
 
-.offers-block-link {
-  padding: 29.5% 0;
-}
-
-.offers__block span {
+.offers-block span {
   font-size: 24px;
   color: #F16D7F;
   display: block;
@@ -321,23 +311,48 @@ section {
   margin: 10px 0 0 0;
 }
 
-.offers-men {
-  background: url(img/offers-women.png);
-  background-size: cover;
-}
-
-.offers-kids {
-  background: url(img/offers-women.png);
-  background-size: cover;
-}
-
-.offers-accesories {
-  background: url(img/4-ACCESORIES.png);
-  background-size: cover;
+.offers-block-link {
+  padding: 29.5% 0;
 }
 
 .offers-block-link-acces {
   padding: 5.8% 0;
+}
+
+.offers-block:not(:last-child) {
+  width: 31.58%;
+  margin: 0 0 2.63% 0;
+}
+
+.offers-block:last-child {
+  width: 100%;
+}
+
+.offers-women {
+  background: url(img/offers_women.png);
+  background-size: cover;
+}
+
+.offers-women:hover {
+  -webkit-transform: scale(1.2) translate(0px, -20px);
+          transform: scale(1.2) translate(0px, -20px);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.offers-men {
+  background: url(img/offers_women.png);
+  background-size: cover;
+}
+
+.offers-kids {
+  background: url(img/offers_women.png);
+  background-size: cover;
+}
+
+.offers-accesories {
+  background: url(img/4_ACCESORIES.png);
+  background-size: cover;
 }
 
 .content h2 {
