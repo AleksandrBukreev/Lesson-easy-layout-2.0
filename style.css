@@ -498,7 +498,7 @@ main {
   margin: 48px 0 95px 0;
 }
 
-.button {
+.cards .button {
   border: 1px solid #FF6A6A;
   text-decoration: none;
   padding: 15px 37px 15px 39px;
@@ -506,6 +506,13 @@ main {
   line-height: 15px;
   color: #F26376;
   display: inline-block;
+}
+
+.cards .button:hover {
+  background: #F16D7F;
+  color: #FFFFFF;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .privileges {
@@ -560,17 +567,12 @@ main {
   text-align: center;
 }
 
-footer {
-  display: block;
-}
-
 .footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
 .footer .subscribe {
-  height: 448px;
   background: url(img/bg-fc.png);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -650,6 +652,62 @@ footer {
   border-radius: 25px 0 0 25px;
 }
 
+.footer .subscribe-form .input-submit .mail-input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.footer .subscribe-form .input-submit .mail-input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.footer .subscribe-form .input-submit .mail-input::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.footer .subscribe-form .input-submit .mail-input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.footer .subscribe-form .input-submit .mail-input:target {
+  outline: none;
+}
+
+.footer .subscribe-form .input-submit .mail-input:focus {
+  outline: none;
+}
+
+.footer .subscribe-form .input-submit .mail-input:focus::-webkit-input-placeholder {
+  visibility: hidden;
+}
+
+.footer .subscribe-form .input-submit .mail-input:focus:-ms-input-placeholder {
+  visibility: hidden;
+}
+
+.footer .subscribe-form .input-submit .mail-input:focus::-ms-input-placeholder {
+  visibility: hidden;
+}
+
+.footer .subscribe-form .input-submit .mail-input:focus::placeholder {
+  visibility: hidden;
+}
+
 .footer .subscribe-form .input-submit .button-submit {
   cursor: pointer;
   width: 100px;
@@ -662,9 +720,35 @@ footer {
   line-height: 17px;
 }
 
+.footer .subscribe-form .input-submit .button-submit:focus {
+  outline: none;
+  background: #E05C6E;
+}
+
+.footer .subscribe-form .input-submit .button-submit:hover {
+  background: #E05C6E;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+.footer-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer .social {
   padding: 24px 0 23px 0;
   background: #222224;
+}
+
+.footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer .social-container {
@@ -686,16 +770,23 @@ footer {
   color: #FBFBFB;
 }
 
-.footer .social-links {
+.footer .social-links a {
+  width: 32px;
+  height: 32px;
+}
+
+.footer .social-links a:not(:last-child) {
+  margin: 0 8px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.button-submit:hover {
-  color: #f16d7f;
-  background-color: white;
-  border: 1px solid #f16d7f;
+.footer .social__links a:hover .iconify__social {
+  color: #fff;
+  background-color: #F16D7F;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .fab {
