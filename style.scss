@@ -8,8 +8,12 @@
 body {
   font-family: 'Lato', sans-serif;
   display: flex;
-  font-display: column;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
     
 .header {
@@ -27,45 +31,66 @@ body {
   display: flex;
   justify-content: space-between;
 }
-  
-.header-left {
+
+.header-left, .header-right {
   display: flex;
   align-items: flex-end;
 }
 
-.header-logo {
-  margin: 0 41px 0 0;
-    
+.header-left {
+  padding: 18px 0 18px 0;
 }
 
-.search {
+.header-logo {
+  margin: 0 41px 0 0;
+}
+
+.header .search {
   display: flex;
 }
 
-.search-button {
+.header .search-button {
   cursor: pointer;
   background: none;
   border: none;
 }
 
-.search-input {
+.header .search-input {
   display: none;
   margin: 0 0 0 10px;
   padding: 5px;
   border-radius: 5px;
 }
 
-.header-right {
+.header .search-input:focus {
+  outline: none;
   display: flex;
-  align-items: flex-end;
+}
+
+.header .search-input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.header .search:hover .search-input {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin: 0 33px 0 0;
 }
 
 .header-item {
   padding: 18px 0 18px 0;
 }
 
-.header-item:not(:last-child) {
-  margin: 0 33px 0 0;
+.header-item:hover .header-menu {
+  display: block;
+  transition: display 0.5s;
+  z-index: 1;
 }
 
 .header-button {
@@ -85,15 +110,30 @@ body {
   display: none;
 }
 
-.header-menu > h4 {
+.header-menu-list {
+  margin: 20px 0 0 0;
+}
+
+.header-menu-list .menu-list li {
+  list-style-type: none;
   text-align: left;
-  font-weight: bold;
+}
+
+.header-menu-list .menu-list li > a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #000000;
-  text-transform: uppercase;
+  color: #6F6E6E;
+  padding: 12px 100px 0 20px;
+  display: block;
 }
-// !!!
+
+.header-menu-list .menu-list li > a:hover {
+  color: #F16D7F;
+}
+
 .header-menu h4 {
   text-align: left;
   color: #F16D7F;
@@ -103,13 +143,15 @@ body {
   text-transform: uppercase;
 }
 
-.header-menu-list {
-  margin: 20px 0 0 0;
+.header-menu > h4 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-main {
-  flex-grow: 1;
-}
 
 section {
   display: block;
@@ -639,9 +681,7 @@ footer {
 
 
 // cart
-main {
-  flex-grow: 1;
-}
+
 
 .shopping {
   display: flex;
@@ -728,18 +768,6 @@ main {
   line-height: 17px;
   color: #000000;
   cursor: pointer;
-}
-button {
-  background: none;
-    text-transform: uppercase;
-    border: 1px solid #A4A4A4;
-    padding: 11px 14px 11px 14px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
-    color: #4A4A4A;
-    cursor: pointer;
 }
 
 .shop-forms {
